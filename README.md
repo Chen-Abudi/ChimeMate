@@ -1,6 +1,6 @@
-# ChimeMate
+# ChimeMate - GitHub Productivity VSCode Extension
 
-# Open source GitHub Productivity VSCode Extension Project
+# Open source Project
 
 ## Developed by Grace Chen Abudi 👩🏽‍💻
 
