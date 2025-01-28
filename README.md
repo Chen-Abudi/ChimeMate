@@ -1,8 +1,14 @@
 # ChimeMate
 
+# Open source GitHub Productivity VSCode Extension Project
+
+## Developed by Grace Chen Abudi 👩🏽‍💻
+
 ChimeMate helps developers track their coding progress effortlessly. Imagine a tool that logs your work every 30 minutes, giving you a detailed activity history. No more manual tracking or forgotten tasks. Stay on top of your productivity with automatic commits—your personal coding journal.
 
-This is the README for your extension "chimemate". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "ChimeMate". After writing up a brief description, we recommend including the following sections.
+
+---
 
 ## Features
 
