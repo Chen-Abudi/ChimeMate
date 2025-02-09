@@ -4,6 +4,10 @@ node_modules
 .DS_Store
 .vscode-test/
 *.vsix
+.env
+.env.local
+.env.production
+
 
 
 
