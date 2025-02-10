@@ -71,21 +71,45 @@ export function activate(context: vscode.ExtensionContext) {
 
     try {
       console.log("Received OAuth code, requesting access token...");
-      const headers = {
-        "Content-Type": "application/x-www-form-urlencoded",
-        Accept: "application/json",
-      };
-      const accessToken = await oauth2.getToken(tokenParams, { headers });
 
-      context.globalState.update(
-        "chimemate.accessToken",
-        accessToken.token.access_token
+      const response = await axios.post(
+        "https://github.com/login/oauth/access_token",
+        {
+          client_id: config.clientId,
+          client_secret: config.clientSecret,
+          code: tokenParams.code,
+          redirect_uri: tokenParams.redirect_uri,
+        },
+        {
+          headers: {
+            Accept: "application/json",
+          },
+        }
       );
+
+      console.log("GitHub Token Response", response.data);
+
+      if (!response.data || response.data.error) {
+        throw new Error(
+          `GitHub OAuth Error: ${
+            response.data.error_description || "Unknown error"
+          }`
+        );
+      }
+
+      // const accessToken = await oauth2.getToken(tokenParams, { headers });
+      const accessToken = response.data.access_token;
+
+      if (!accessToken) {
+        throw new Error("No access token received from GitHub.");
+      }
+
+      context.globalState.update("chimemate.accessToken", accessToken);
       console.log("Access token saved.");
 
       console.log("Fetching user data from GitHub...");
       const userData = await axios.get("https://api.github.com/user", {
-        headers: { Authorization: `Bearer ${accessToken.token.access_token}` },
+        headers: { Authorization: `Bearer ${accessToken}` },
       });
 
       console.log(`OAuth successful! Authenticated as ${userData.data.login}`);
@@ -94,9 +118,12 @@ export function activate(context: vscode.ExtensionContext) {
       );
 
       res.send("Authentication successful! You can close this window.");
-    } catch (error) {
-      res.status(500).send("Authentication failed!");
-      console.error("Error during OAuth process:", error);
+    } catch (error: any) {
+      console.error(
+        "Error during OAuth process:",
+        error.response?.data || error.message
+      );
+      res.status(500).send(`Authentication failed! ${error.message}`);
     }
   });
 
