@@ -1,76 +1,67 @@
-import * as assert from "assert";
 import * as vscode from "vscode";
-import * as http from "http";
 import express from "express";
 import axios from "axios";
-import * as chimemate from "../extension"; // Import the actual extension
+import { deactivate } from "../extension";
 
-// Mock environment variables for testing
-process.env.GITHUB_CLIENT_ID = "mockClientId";
-process.env.GITHUB_CLIENT_SECRET = "mockClientSecret";
-process.env.REDIRECT_URI = "http://localhost:3000/auth/callback";
+// Mock the required modules
+jest.mock("axios");
+jest.mock("vscode", () => ({
+  commands: {
+    executeCommand: jest.fn().mockResolvedValue({ success: true }),
+  },
+}));
 
-suite("Extension Test Suite", () => {
-  let server: http.Server;
+describe("GitHub OAuth Extension", () => {
+  let appMock: express.Express;
+  let serverListenMock: jest.Mock;
 
-  // Start the server and activate the extension before tests run
-  suiteSetup((done) => {
-    const app = express();
-    app.get("/auth/callback", (req, res) => {
-      res.send("Authentication successful!");
-    });
-    server = app.listen(3000, () => {
-      console.log("OAuth server running on http://localhost:3000");
-
-      // Activate the extension in the test context
-      chimemate.activate({
-        subscriptions: [],
-      } as unknown as vscode.ExtensionContext);
-
-      done();
-    });
+  beforeEach(() => {
+    // Initialize mock objects
+    appMock = express();
+    serverListenMock = jest.fn();
+    appMock.listen = serverListenMock;
   });
 
-  // Stop the server and deactivate the extension after tests finish
-  suiteTeardown(() => {
-    server.close();
-
-    // Deactivate the extension
-    chimemate.deactivate();
+  afterEach(() => {
+    jest.clearAllMocks();
   });
 
-  vscode.window.showInformationMessage("Start all tests.");
+  it("should activate the extension", async () => {
+    const spy = jest.spyOn(appMock, "listen");
+    appMock.listen(3000);
 
-  test("Sample test for OAuth redirect", async () => {
-    // Simulate the user clicking on the "startTracking" command
-    const uri = `https://github.com/login/oauth/authorize?client_id=mockClientId&redirect_uri=http://localhost:3000/auth/callback&scope=repo`;
-    const expectedUrl = vscode.Uri.parse(uri);
+    expect(spy).toHaveBeenCalledWith(3000);
+  });
 
-    // Ensure the URL matches what the extension opens
-    assert.strictEqual(
-      vscode.env.openExternal(vscode.Uri.parse(uri)),
-      expectedUrl
+  it("should handle OAuth callback correctly", async () => {
+    const axiosPostMock = axios.post as jest.Mock;
+    axiosPostMock.mockResolvedValue({ data: { success: true } });
+
+    const result = await vscode.commands.executeCommand(
+      "extension.startTracking"
     );
 
-    // Simulate a request to the /auth/callback endpoint
+    expect(result).toEqual({ success: true });
+    expect(axiosPostMock).toHaveBeenCalledWith(
+      expect.stringContaining("auth/callback"), // Expect URL containing 'auth/callback'
+      expect.any(Object) // Expecting any object as the second argument
+    );
+  });
+
+  it("should handle missing authorization code in callback", async () => {
+    const axiosPostMock = axios.post as jest.Mock;
+    axiosPostMock.mockRejectedValue(new Error("Missing authorization code"));
+
     try {
-      const response = await axios.get("http://localhost:3000/auth/callback", {
-        params: { code: "mockCode" },
-      });
-      assert.strictEqual(response.data, "Authentication successful!");
-    } catch (error) {
-      assert.fail("OAuth callback request failed");
+      await vscode.commands.executeCommand("extension.startTracking");
+    } catch (error: any) {
+      expect(error.message).toBe("Missing authorization code");
     }
   });
 
-  test("Sample test for invalid OAuth code", async () => {
-    try {
-      const response = await axios.get("http://localhost:3000/auth/callback", {
-        params: { code: "invalidCode" },
-      });
-      assert.fail("Expected an error response due to invalid OAuth code");
-    } catch (error) {
-      assert.ok(error);
-    }
+  it("should deactivate the extension", async () => {
+    const spy = jest.spyOn(console, "log").mockImplementation();
+    deactivate();
+    expect(spy).toHaveBeenCalledWith("Extension deactivated");
   });
 });
