@@ -1,12 +1,97 @@
 # ChimeMate - GitHub Productivity VSCode Extension
 
-# Open source Project
+# 🧠 Open source Project
 
 ## Developed by Grace Chen Abudi 👩🏽‍💻
 
+**_Coding with Grace, Delivering with Aloha 🌺_**
+
 ### Stay Tuned
 
-ChimeMate helps developers track their coding progress effortlessly. Imagine a tool that logs your work every 30 minutes, giving you a detailed activity history. No more manual tracking or forgotten tasks. Stay on top of your productivity with automatic commits—your personal coding journal.
+**ChimeMate** helps developers track their coding progress effortlessly by acting as your **personal commit journal**. Imagine a tool that logs your work every 30 minutes with intelligent summaries and integrates with GitHub to sync commit metadata for traceability transparency.
+
+Whether your'e freelancing, contributing to open source, or studying, ChimeMate keeps a timeline of your work - so you don't have to.
+
+---
+
+## 🚀 Features
+
+- ⏰ **Auto Commit Logging**: Log code progress at regular intervals (default: 30 minutes).
+- 🧾 **GitHub Commit Fetching**: Integrates with GitHub API to fetch latest commit metadata (author, changes, stats).
+- 📊 **Local Commit History**: Stores commit logs in a structured JSON file to track file changes, time, and progress.
+- 🔐 **Error-Handled API Access**: Gracefully handles API failures and ensures no interruptions to your workflow.
+- 💬 **Console Feedback**: Get clear logs and confirmation when auto-logging or syncing with GitHub.
+
+---
+
+## Coming Soon
+
+- 🖥️ Visual commit timeline in the VSCode sidebar.
+- ☁️ Cloud sync for commit logs.
+- 🧠 AI-generated commit summaries.
+
+---
+
+## ⚙️ Requirements
+
+- Node.js ≥ 18.x
+- GitHub Personal Access Token (for GitHub integration)
+- VS Code version 1.70 or later
+
+> Ensure your token has `repo` access to read commit metadata.
+
+---
+
+## 🔧 Extension Settings
+
+This extension contributes the following VS Code settings:
+
+- `chimeMate.enable`: Enable/disable ChimeMate.
+- `chimeMate.autoLogInterval`: Set interval in minutes for auto-logging commits.
+- `chimeMate.githubToken`: Provide your GitHub Personal Access Token.
+- `chimeMate.repositoryUrl`: Set the GitHub repo URL (e.g., https://github.com/user/repo.git).
+
+---
+
+## 🐞 Known Issues
+
+- Only supports public GitHub repositories for now.
+- Logging currently writes to local JSON only; no cloud sync yet.
+- Auto-log does not trigger if VSCode is idle or closed.
+
+---
+
+## 📝 Release Notes
+
+**1.0.0**
+
+Initial release of ChimeMate.
+
+**1.1.0**
+
+- Feature: GitHub API integration to fetch latest commit metadata
+
+- Refactor: Organized `src/types`, `src/github`, and `src/utils` directories
+
+- Logging: Writes structured JSON logs per commit
+
+- Security: Uses environment variable to protect GitHub token
+
+---
+
+## ✅ Roadmap (Next Milestones)
+
+- [ ] Add commit visualization panel
+- [ ] Enable commit comment editing pre-log
+- [ ] Support multiple branches
+- [ ] GitLab and Bitbucket support
+- [ ] Auto-generate weekly coding reports
+
+---
+
+**Enjoy using ChimeMate!**
+
+**_Track your progress. Celebrate your growth. One commit at a time._**
 
 ---
 
