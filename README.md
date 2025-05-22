@@ -89,6 +89,23 @@ Initial release of ChimeMate.
 
 ---
 
+## 🤝🏽 Contributing
+
+We welcome contributions are welcome from developers of all experience levels!
+Please read our [**CONTRIBUTING.md**](CONTRIBUTING.md) guide to get started.
+
+---
+
+## 📜 Additional Policies
+
+We strive to create a collaborative and respectful community where everyone feels valued and safe.
+Please take a moment to read our guidelines and security policy:
+
+- [📘 Contributor Code of Conduct](./CODE_OF_CONDUCT.md)
+- [🔐 Security Policy](./SECURITY.md)
+
+---
+
 **Enjoy using ChimeMate!**
 
 **_Track your progress. Celebrate your growth. One commit at a time._**
