@@ -117,7 +117,7 @@ Please take a moment to read our guidelines and security policy:
 
 **_Track your progress. Celebrate your growth. One commit at a time._**
 
----
+<!-- ---
 
 This is the README for your extension "ChimeMate". After writing up a brief description, we recommend including the following sections.
 
@@ -187,4 +187,4 @@ You can author your README using Visual Studio Code. Here are some useful editor
 - [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 - [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+**Enjoy!** -->
