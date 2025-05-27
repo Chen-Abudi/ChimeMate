@@ -91,7 +91,7 @@ Initial release of ChimeMate.
 
 ## 🤝🏽 Contributing
 
-We welcome contributions are welcome from developers of all experience levels!
+We welcome contributions from developers of all experience levels!
 Please read our [**CONTRIBUTING.md**](CONTRIBUTING.md) guide to get started.
 
 ---
@@ -103,6 +103,13 @@ Please take a moment to read our guidelines and security policy:
 
 - [📘 Contributor Code of Conduct](./CODE_OF_CONDUCT.md)
 - [🔐 Security Policy](./SECURITY.md)
+
+---
+
+## 📚 For More Info
+
+- [VS Code Extension Guidelines](https://code.visualstudio.com/api/ux-guidelines/overview).
+- [GitHub API Docs](https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28).
 
 ---
 

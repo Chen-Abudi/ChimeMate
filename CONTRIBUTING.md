@@ -6,7 +6,7 @@ Thank you for considering contributing to this project! We welcome contributions
 
 ### 1. Fork the Repository
 
-Click the **Fork** button at the top-right corner of this repository to create your copy.
+Click the **`Fork`** button at the top-right corner of this repository to create your copy.
 
 ### 2. Clone Your Fork
 
