@@ -6,6 +6,8 @@
 
 **_Coding with Grace, Delivering with Aloha 🌺_**
 
+---
+
 ### Stay Tuned
 
 **ChimeMate** helps developers track their coding progress effortlessly by acting as your **personal commit journal**. Imagine a tool that logs your work every 30 minutes with intelligent summaries and integrates with GitHub to sync commit metadata for traceability transparency.
@@ -24,11 +26,11 @@ Whether your'e freelancing, contributing to open source, or studying, ChimeMate 
 
 ---
 
-## Coming Soon
+## 🌱 Coming Soon
 
-- 🖥️ Visual commit timeline in the VSCode sidebar.
-- ☁️ Cloud sync for commit logs.
-- 🧠 AI-generated commit summaries.
+- 🖥️ **Visual Commit Timeline**: Integrated sidebar for viewing your commit activity.
+- ☁️ **Cloud Sync**: Sync logs across multiple devices securely.
+- 🧠 **AI-generated Commit Summaries**: Intelligent log summaries using LLMs.
 
 ---
 
@@ -69,13 +71,13 @@ Initial release of ChimeMate.
 
 **1.1.0**
 
-- Feature: GitHub API integration to fetch latest commit metadata
+- 🔗 Feature: GitHub API integration to fetch latest commit metadata
 
-- Refactor: Organized `src/types`, `src/github`, and `src/utils` directories
+- 🧹 Refactor: Organized `src/types`, `src/github`, and `src/utils` directories
 
-- Logging: Writes structured JSON logs per commit
+- 📁 Logging: Writes structured JSON logs per commit
 
-- Security: Uses environment variable to protect GitHub token
+- 🔐 Security: Uses environment variable to protect GitHub token
 
 ---
 
