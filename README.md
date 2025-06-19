@@ -31,6 +31,8 @@ Whether your'e freelancing, contributing to open source, or studying, **ChimeMat
 - 🖥️ **Visual Commit Timeline**: Integrated sidebar for viewing your commit activity.
 - ☁️ **Cloud Sync**: Sync logs across multiple devices securely.
 - 🧠 **AI-generated Commit Summaries**: Intelligent log summaries using LLMs.
+- 🧪 Testing coverage and performance logs.
+- 📦 Multi-platform Git provider support - (Optional: GitLab, Bitbucket, etc.)
 
 ---
 
@@ -40,7 +42,9 @@ Whether your'e freelancing, contributing to open source, or studying, **ChimeMat
 - GitHub Personal Access Token (for GitHub integration)
 - VS Code version 1.70 or later
 
-> Ensure your token has `repo` access to read commit metadata.
+> **Make sure your token is added securely via environment variables or the VSCode settings.**
+
+> **Ensure your token has `repo` access to read commit metadata.**
 
 ---
 
@@ -48,16 +52,23 @@ Whether your'e freelancing, contributing to open source, or studying, **ChimeMat
 
 This extension contributes the following VS Code settings:
 
-- `chimeMate.enable`: Enable/disable ChimeMate.
+| Setting                     | Description                                            |
+| --------------------------- | ------------------------------------------------------ |
+| `chimeMate.enable`          | Enable/disable ChimeMate                               |
+| `chimeMate.autoLogInterval` | Set auto-log interval in minutes                       |
+| `chimeMate.githubToken`     | Set your GitHub token securely                         |
+| `chimeMate.repositoryUrl`   | GitHub repo URL (e.g., `https://github.com/user/repo`) |
+
+<!-- - `chimeMate.enable`: Enable/disable ChimeMate.
 - `chimeMate.autoLogInterval`: Set interval in minutes for auto-logging commits.
 - `chimeMate.githubToken`: Provide your GitHub Personal Access Token.
-- `chimeMate.repositoryUrl`: Set the GitHub repo URL (e.g., https://github.com/user/repo.git).
+- `chimeMate.repositoryUrl`: Set the GitHub repo URL (e.g., https://github.com/user/repo.git). -->
 
 ---
 
 ## 🐞 Known Issues
 
-- Only supports public GitHub repositories for now.
+- Only supports **public GitHub repositories** for now.
 - Logging currently writes to local JSON only; no cloud sync yet.
 - Auto-log does not trigger if VSCode is idle or closed.
 
@@ -73,7 +84,7 @@ Initial release of ChimeMate.
 
 - 🔗 Feature: GitHub API integration to fetch latest commit metadata
 
-- 🧹 Refactor: Organized `src/types`, `src/github`, and `src/utils` directories
+- 🧹 Refactor: Directory structure for scalability. Organized `src/types`, `src/github`, and `src/utils` directories.
 
 - 📁 Logging: Writes structured JSON logs per commit
 
@@ -86,22 +97,23 @@ Initial release of ChimeMate.
 - [ ] Add commit visualization panel
 - [ ] Enable commit comment editing pre-log
 - [ ] Support multiple branches
-- [ ] GitLab and Bitbucket support
-- [ ] Auto-generate weekly coding reports
+- [ ] ☁️ Cloud commit log storage
+- [ ] 📊 Auto-generate weekly coding reports & visual insights
+- [ ] 🌐 Git provider support (GitLab/Bitbucket)
 
 ---
 
 ## 🤝🏽 Contributing
 
-We welcome contributions from developers of all experience levels!
-Please read our [**CONTRIBUTING.md**](CONTRIBUTING.md) guide to get started.
+Contributions from developers of all experience levels are welcome!
+Please read the [**CONTRIBUTING.md**](CONTRIBUTING.md) guide to get started.
 
 ---
 
 ## 📜 Additional Policies
 
-We strive to create a collaborative and respectful community where everyone feels valued and safe.
-Please take a moment to read our guidelines and security policy:
+I strive to create a collaborative and respectful community where everyone feels valued and safe.
+Please take a moment to read the guidelines and security policy:
 
 - [📘 Contributor Code of Conduct](./CODE_OF_CONDUCT.md)
 - [🔐 Security Policy](./SECURITY.md)
@@ -115,7 +127,7 @@ Please take a moment to read our guidelines and security policy:
 
 ---
 
-**Enjoy using ChimeMate!**
+## 🎉 Enjoy using ChimeMate!
 
 **_Track your progress. Celebrate your growth. One commit at a time._**
 
