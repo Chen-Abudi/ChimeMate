@@ -10,23 +10,23 @@
 
 ### Stay Tuned
 
-**ChimeMate** helps developers track their coding progress effortlessly by acting as your **personal commit journal**. Imagine a tool that logs your work every 30 minutes with intelligent summaries and integrates with GitHub to sync commit metadata for traceability transparency.
+**ChimeMate** helps developers track their coding progress effortlessly by acting as your **personal commit journal**. Imagine a tool that logs your work every 30 minutes, intelligently summarizing your changes and syncing them with GitHub for full traceability and transparency.
 
-Whether your'e freelancing, contributing to open source, or studying, ChimeMate keeps a timeline of your work - so you don't have to.
+Whether your'e freelancing, contributing to open source, or studying, **ChimeMate** keeps a reliable timeline of your work - so you don't have to.
 
 ---
 
 ## 🚀 Features
 
 - ⏰ **Auto Commit Logging**: Log code progress at regular intervals (default: 30 minutes).
-- 🧾 **GitHub Commit Fetching**: Integrates with GitHub API to fetch latest commit metadata (author, changes, stats).
+- 🧾 **GitHub Commit Fetching**: Integrates with GitHub API to fetch latest commit metadata (author, files changes, stats, additions/deletions, and more).
 - 📊 **Local Commit History**: Stores commit logs in a structured JSON file to track file changes, time, and progress.
 - 🔐 **Error-Handled API Access**: Gracefully handles API failures and ensures no interruptions to your workflow.
 - 💬 **Console Feedback**: Get clear logs and confirmation when auto-logging or syncing with GitHub.
 
 ---
 
-## 🌱 Coming Soon
+## 🌱 ⏳ Coming Soon
 
 - 🖥️ **Visual Commit Timeline**: Integrated sidebar for viewing your commit activity.
 - ☁️ **Cloud Sync**: Sync logs across multiple devices securely.
