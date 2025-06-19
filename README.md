@@ -82,23 +82,23 @@ Initial release of ChimeMate.
 
 **1.1.0**
 
-- 🔗 Feature: GitHub API integration to fetch latest commit metadata
+- 🔗 **Feature:** GitHub API integration to fetch latest commit metadata
 
-- 🧹 Refactor: Directory structure for scalability. Organized `src/types`, `src/github`, and `src/utils` directories.
+- 🧹 **Refactor:** Directory structure for scalability. Organized `src/types`, `src/github`, and `src/utils` directories.
 
-- 📁 Logging: Writes structured JSON logs per commit
+- 📁 **Logging:** Writes structured JSON logs per commit
 
-- 🔐 Security: Uses environment variable to protect GitHub token
+- 🔐 **Security:** Uses environment variable to protect GitHub token
 
 ---
 
 ## ✅ Roadmap (Next Milestones)
 
-- [ ] Add commit visualization panel
-- [ ] Enable commit comment editing pre-log
-- [ ] Support multiple branches
+- [ ] 📊 Add commit visualization panel
+- [ ] 📝 Enable commit comment editing pre-log
+- [ ] 🌿 Support multiple branches
 - [ ] ☁️ Cloud commit log storage
-- [ ] 📊 Auto-generate weekly coding reports & visual insights
+- [ ] 📅 Auto-generate weekly coding reports & visual insights
 - [ ] 🌐 Git provider support (GitLab/Bitbucket)
 
 ---
