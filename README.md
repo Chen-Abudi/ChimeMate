@@ -42,9 +42,11 @@ Whether your'e freelancing, contributing to open source, or studying, **ChimeMat
 - GitHub Personal Access Token (for GitHub integration)
 - VS Code version 1.70 or later
 
-> **Make sure your token is added securely via environment variables or the VSCode settings.**
+> [!IMPORTANT]
+> Make sure your token is added securely via environment variables or the VSCode settings.
 
-> **Ensure your token has `repo` access to read commit metadata.**
+> [!IMPORTANT]
+> Ensure your token has `repo` access to read commit metadata.
 
 ---
 
