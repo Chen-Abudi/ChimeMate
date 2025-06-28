@@ -4,8 +4,6 @@
 
 ## Developed by Grace Chen Abudi 👩🏽‍💻
 
-**_Coding with Grace, Delivering with Aloha 🌺_**
-
 ---
 
 ### Stay Tuned
@@ -54,17 +52,12 @@ Whether your'e freelancing, contributing to open source, or studying, **ChimeMat
 
 This extension contributes the following VS Code settings:
 
-| Setting                     | Description                                            |
-| --------------------------- | ------------------------------------------------------ |
-| `chimeMate.enable`          | Enable/disable ChimeMate                               |
-| `chimeMate.autoLogInterval` | Set auto-log interval in minutes                       |
-| `chimeMate.githubToken`     | Set your GitHub token securely                         |
-| `chimeMate.repositoryUrl`   | GitHub repo URL (e.g., `https://github.com/user/repo`) |
-
-<!-- - `chimeMate.enable`: Enable/disable ChimeMate.
-- `chimeMate.autoLogInterval`: Set interval in minutes for auto-logging commits.
-- `chimeMate.githubToken`: Provide your GitHub Personal Access Token.
-- `chimeMate.repositoryUrl`: Set the GitHub repo URL (e.g., https://github.com/user/repo.git). -->
+| Setting                     | Description                                                |
+| --------------------------- | ---------------------------------------------------------- |
+| `chimeMate.enable`          | Enable/disable ChimeMate                                   |
+| `chimeMate.autoLogInterval` | Set auto-log interval in minutes                           |
+| `chimeMate.githubToken`     | Set your GitHub token securely                             |
+| `chimeMate.repositoryUrl`   | Set GitHub repo URL (e.g., `https://github.com/user/repo`) |
 
 ---
 
