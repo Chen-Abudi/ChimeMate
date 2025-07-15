@@ -1,12 +1,12 @@
 # ChimeMate - GitHub Productivity VSCode Extension
 
-# 🧠 Open source Project
+## 🧠 Open source Project
 
-## Developed by Grace Chen Abudi 👩🏽‍💻
+### Developed by Grace Chen Abudi 👩🏽‍💻
 
 ---
 
-### Stay Tuned
+### 📌 Stay Tuned
 
 **ChimeMate** helps developers track their coding progress effortlessly by acting as your **personal commit journal**. Imagine a tool that logs your work every 30 minutes, intelligently summarizing your changes and syncing them with GitHub for full traceability and transparency.
 
@@ -26,11 +26,11 @@ Whether your'e freelancing, contributing to open source, or studying, **ChimeMat
 
 ## 🌱 ⏳ Coming Soon
 
-- 🖥️ **Visual Commit Timeline**: Integrated sidebar for viewing your commit activity.
+- 🖥️ **Visual Commit Timeline**: Integrated sidebar panel for viewing your commit activity.
 - ☁️ **Cloud Sync**: Sync logs across multiple devices securely.
-- 🧠 **AI-generated Commit Summaries**: Intelligent log summaries using LLMs.
-- 🧪 Testing coverage and performance logs.
-- 📦 Multi-platform Git provider support - (Optional: GitLab, Bitbucket, etc.)
+- 🧠 **AI-generated Commit Summaries**: LLMs powered intelligent commit messages.
+- 🧪 **Testing coverage** and performance logs.
+- 📦 **Multi-platform Git Provider Support** (Optional: GitLab, Bitbucket, etc.)
 
 ---
 
@@ -63,8 +63,8 @@ This extension contributes the following VS Code settings:
 
 ## 🐞 Known Issues
 
-- Only supports **public GitHub repositories** for now.
-- Logging currently writes to local JSON only; no cloud sync yet.
+- Currently supports only **public GitHub repositories**.
+- Logging currently writes to local JSON only, no cloud sync yet.
 - Auto-log does not trigger if VSCode is idle or closed.
 
 ---
@@ -73,34 +73,42 @@ This extension contributes the following VS Code settings:
 
 **1.0.0**
 
-Initial release of ChimeMate.
+- Initial release of ChimeMate.
 
 **1.1.0**
 
-- 🔗 **Feature:** GitHub API integration to fetch latest commit metadata
+- 🔗 GitHub API integration for commit metadata
+
+- 📁 Commit logs stored in `commitLogs.json`
+
+- 🔐 GitHub token handled securely via settings/env
+
+- 🧹 Refactored structure into `src/github`, `src/types`, and `src/utils`
+
+<!-- - 🔗 **Feature:** GitHub API integration to fetch latest commit metadata
 
 - 🧹 **Refactor:** Directory structure for scalability. Organized `src/types`, `src/github`, and `src/utils` directories.
 
 - 📁 **Logging:** Writes structured JSON logs per commit
 
-- 🔐 **Security:** Uses environment variable to protect GitHub token
+- 🔐 **Security:** Uses environment variable to protect GitHub token -->
 
 ---
 
 ## ✅ Roadmap (Next Milestones)
 
-- [ ] 📊 Add commit visualization panel
+- [ ] 📊 Add visual commit timeline panel inside VSCode
 - [ ] 📝 Enable commit comment editing pre-log
-- [ ] 🌿 Support multiple branches
-- [ ] ☁️ Cloud commit log storage
-- [ ] 📅 Auto-generate weekly coding reports & visual insights
+- [ ] 🌿 Support multiple branches & multi-repo
+- [ ] ☁️ Cloud-based commit log storage backup
+- [ ] 📅 Auto-generated weekly coding reports & visual insights
 - [ ] 🌐 Git provider support (GitLab/Bitbucket)
 
 ---
 
 ## 🤝🏽 Contributing
 
-Contributions from developers of all experience levels are welcome!
+Contributions are welcome from all developers skill levels!
 Please read the [**CONTRIBUTING.md**](CONTRIBUTING.md) guide to get started.
 
 ---
@@ -122,7 +130,7 @@ Please take a moment to read the guidelines and security policy:
 
 ---
 
-## 🎉 Enjoy using ChimeMate!
+## 🎉 Enjoy Using ChimeMate!
 
 **_Track your progress. Celebrate your growth. One commit at a time._**
 
