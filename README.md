@@ -139,7 +139,8 @@ to find a good place to start.
 
 ## 📜 Community & Policies
 
-ChimeMate is built with aloha and respect 🌺
+ChimeMate is built with aloha and respect 🌺.
+
 I strive to create a collaborative and respectful community where everyone feels valued and safe.
 Please take a moment to read the guidelines and the security policy:
 
