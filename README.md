@@ -166,8 +166,6 @@ Please take a moment to read the guidelines and the security policy:
 
 **_Track your progress. Celebrate your growth. One commit at a time._**
 
-<!-- ## 🎉 Enjoy Using ChimeMate! -->
-
 <!-- ---
 
 This is the README for your extension "ChimeMate". After writing up a brief description, we recommend including the following sections.
