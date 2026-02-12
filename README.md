@@ -9,7 +9,7 @@
 ### The Problem
 
 Have you ever found yourself coding for hours, totally in the zone mode, and then realized you can't quite recall what you actually did?
-Between commits, context switching, debugging marathons, and jumping across files, it's easy to lose track of your progress especially when commits don't quite reflect the full picture.
+Between commits, context switching, debugging marathons, and jumping across files, it's easy to lose track of our progress especially when commits don't quite reflect the full picture.
 Manual journaling or remembering every change isn't realistic for busy developers.
 
 ---
@@ -33,11 +33,15 @@ Whether your'e freelancing, contributing to open source, or just learning, **Chi
 
 ## Core Features
 
-- ⏰ **Auto Commit Logging**: Automatically logs code progress at regular intervals (default: every 30 minutes).
-- 🧾 **GitHub Commit Fetching**: Integrates with the GitHub API to fetch detailed commit data: author, changed files, stats, additions, deletions, and more.
-- 📊 **Local Commit History**: Stores structured commit logs in JSON format for easy access and time tracking.
-- 🔐 **Error-Handled API Access**: Gracefully handles API failures so your workflow never stops.
-- 💬 **Console Feedback**: Clear, friendly logs let you know when auto-logging or syncing is in progress.
+- **Auto Commit Logging**: Automatically logs code progress at regular intervals (default: every 30 minutes).
+
+- **GitHub Commit Fetching**: Integrates with the GitHub API to fetch detailed commit data: author, changed files, stats, additions, deletions, and more.
+
+- **Local Commit History**: Stores structured commit logs in JSON format for easy access and time tracking.
+
+- **Error-Handled API Access**: Gracefully handles API failures so your workflow never stops.
+
+- **Console Feedback**: Clear, friendly logs let you know when auto-logging or syncing is in progress.
 
 ---
 
@@ -45,11 +49,15 @@ Whether your'e freelancing, contributing to open source, or just learning, **Chi
 
 Just got started, but here's what's next on ChimeMate's journey:
 
-- 🖥️ **Visual Commit Timeline**: A sleek sidebar panel inside VS Code to visualize your commit history at a glance.
-- ☁️ **Cloud Sync**: Keep your logs backed up and accessible across all your devices.
-- 🧠 **AI-generated Commit Summaries**: Smart, meaningful summaries generated automatically by LLMs.
-- 🧪 **Test Coverage Insights**: Track testing performance alongside commits.
-- 📦 **Multi-platform Git Provider Support**: Optional support for GitLab, Bitbucket, and beyond.
+- **Visual Commit Timeline**: A sleek sidebar panel inside VS Code to visualize your commit history at a glance.
+
+- **Cloud Sync**: Keep your logs backed up and accessible across all your devices.
+
+- **AI-generated Commit Summaries**: Smart, meaningful summaries generated automatically by LLMs.
+
+- **Test Coverage Insights**: Track testing performance alongside commits.
+
+- **Multi-platform Git Provider Support**: Optional support for GitLab, Bitbucket, and beyond.
 
 ---
 
@@ -156,9 +164,9 @@ Please take a moment to read the guidelines and the security policy:
 
 ---
 
-## 🎉 Enjoy Using ChimeMate!
-
 **_Track your progress. Celebrate your growth. One commit at a time._**
+
+<!-- ## 🎉 Enjoy Using ChimeMate! -->
 
 <!-- ---
 
