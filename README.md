@@ -2,7 +2,7 @@
 
 ## 🧠 Open source Project
 
-### Developed by Grace Chen Abudi 👩🏽‍💻
+### Developing by Grace Chen Abudi 👩🏽‍💻
 
 ---
 
@@ -133,19 +133,19 @@ This extension contributes the following VS Code settings:
 - [ ] 📅 Auto-generated weekly coding reports & visual insights
 - [ ] 🌐 Git provider support (GitLab/Bitbucket)
 
-<!-- Follow our **Project Board** to see what’s cooking! -->
+<!-- Follow **Project Board** to see what’s cooking! -->
 
 ---
 
 ## 🤝🏽 Contributing
 
-Contributions are always welcome from all developers skill levels! Whether you’re fixing bugs, improving docs, or dreaming up new features
+Contributions are always welcome from all developers skill levels! Whether you’re fixing bugs, improving docs, or dreaming up new features.
 Please check out the [**CONTRIBUTING.md**](CONTRIBUTING.md) and browse the **open issues**
 to find a good place to start.
 
 ---
 
-## 📜 Community & Policies
+## Community & Policies
 
 ChimeMate is built with aloha and respect 🌺.
 
