@@ -17,7 +17,6 @@ If you discover a security vulnerability in ChimeMate, please follow these guide
 
 2. **Include Detailed Information:**  
    Your report should include:
-
    - A clear description of the vulnerability.
    - Steps to reproduce the issue.
    - The potential impact of the vulnerability.
@@ -34,9 +33,9 @@ If you discover a security vulnerability in ChimeMate, please follow these guide
 - **Communication:** We will keep you updated on our progress.
 - **Public Disclosure:** Once the vulnerability has been resolved (or after the agreed-upon disclosure period), we may issue a public advisory that summarizes the issue without revealing sensitive details.
 
-## 💰 Bug Bounty
+<!-- ## 💰 Bug Bounty
 
-At this time, ChimeMate does not have a formal bug bounty program. However, we greatly appreciate your efforts to help us improve our security. In some cases, we may consider rewards on a case-by-case basis for responsible disclosures.
+At this time, ChimeMate does not have a formal bug bounty program. However, we greatly appreciate your efforts to help us improve our security. In some cases, we may consider rewards on a case-by-case basis for responsible disclosures. -->
 
 ## 🎯 Security Best Practices
 
